@@ -2,16 +2,6 @@ import configparser
 config = configparser.ConfigParser()
 config.read('config.ini')
 
-######## Configurações de cores ########
-bg_color = tuple(int(c) for c in config.get('colors', 'bg_color').split(','))
-line_color = tuple(int(c) for c in config.get('colors', 'line_color').split(','))
-retangulo_sele_color = tuple(int(c) for c in config.get('colors', 'retangulo_sele_color').split(','))
-retangulo_sele_vitoria = tuple(int(c) for c in config.get('colors', 'retangulo_sele_vitoria').split(','))
-x_color = tuple(int(c) for c in config.get('colors', 'x_color').split(','))
-circle_color = tuple(int(c) for c in config.get('colors', 'circle_color').split(','))
-score_value_color = tuple(int(c) for c in config.get('colors', 'score_value_color').split(','))
-score_title_color = tuple(int(c) for c in config.get('colors', 'score_title_color').split(','))
-
 ######## Configurações de tamanhos ########
 line_size = int(config.get('sizes', 'line_size')) ## Espessura das linhas do tabuleiro
 tabu_size = tuple(int(c) for c in config.get('sizes', 'tabu_size').split(',')) ## Tamanho do tabuleiro
