@@ -58,3 +58,420 @@ v1.0.0
 excutado em 2023-02-22 16:30:38.167071
 Nova partida iniciada
 Tabuleiro limpo
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:38:54.145496
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:40:24.057167
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:41:30.918764
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:42:44.494320
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:43:07.199407
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:43:18.887065
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:45:32.859357
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:46:20.622740
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:46:52.170114
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:47:08.844968
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:47:43.946636
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:49:19.200480
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:50:16.037144
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:50:31.275362
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:52:13.537831
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:54:03.104707
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:54:45.978779
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 16:57:52.044243
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.0
+excutado em 2023-02-22 17:01:59.301085
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:02:34.719078
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:06:25.675777
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:06:49.062200
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:07:30.377350
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:08:52.263236
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:09:50.231469
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:11:09.969098
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:11:48.684062
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:12:56.713892
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:13:25.203983
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:13:40.840114
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:14:02.144252
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:14:58.689959
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:16:38.833002
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:17:45.645678
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:22:09.980080
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:22:13.074963
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:22:15.159296
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:22:21.969245
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:22:33.251253
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:22:35.451287
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:22:40.052218
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:22:51.918251
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:25:16.938775
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:34:31.737044
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:44:20.252699
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:44:33.596815
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:45:11.690023
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:45:51.123950
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:46:16.855924
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:46:29.073362
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:46:33.930651
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:46:58.608196
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:48:13.960107
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:49:07.347453
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:49:21.630099
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:49:36.831153
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:52:26.191943
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:52:43.266346
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:52:59.701979
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:53:17.686709
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+
+
+****************************************************
+v1.0.1
+excutado em 2023-02-22 17:58:23.328742
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo
+Nova partida iniciada
+Tabuleiro limpo

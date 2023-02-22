@@ -1,4 +1,4 @@
-vesion = 'v1.0.0'
+vesion = 'v1.0.1'
 
 # -*- coding: utf-8 -*-
 ######## Impotação de bibliotecas ########
@@ -99,11 +99,14 @@ def limpar_tabu(): ## limpar o tabuleiro
     debug_funcion('limpar_tabu()', tempo_debug)
     output('Tabuleiro limpo')
     global jogadas
+    global finalizado
     jogadas=[
     ' ' , ' ' , ' ',
     ' ' , ' ' , ' ',
     ' ' , ' ' , ' '
     ]
+    finalizado = False
+
 
 def desenhar_x (posx,posy): ## Desenhar o X
     debug_funcion(('desenhar_x ', str(posx), str(posy)), tempo_debug)
@@ -176,12 +179,12 @@ def desenhar_aba_status(): ## Desenha a Aba de Status lateral
     tela.blit(Gabriel_J_Santos,(posx+117,posy))
 
     fonte=pygame.font.get_default_font()
-    txt_score_title= ('v1.0.0') ## terxo titulo da região score
+    txt_vesion= (vesion) ## terxo titulo da região score
     fontesys=pygame.font.SysFont(fonte, 50)
-    score_title = fontesys.render(txt_score_title , 1, (score_title_color)) 
-    largura_texto, altura_texto = score_title.get_size()
-    rect_texto = score_title.get_rect(centerx=936, centery=120)
-    tela.blit(score_title, rect_texto)
+    vesion_pygame = fontesys.render(txt_vesion , 1, (score_title_color)) 
+    largura_texto, altura_texto = vesion_pygame.get_size()
+    rect_texto = vesion_pygame.get_rect(centerx=936, centery=120)
+    tela.blit(vesion_pygame, rect_texto)
 
     fonte=pygame.font.get_default_font()
     txt_score_title= ('*********** SCORE ***********') ## terxo titulo da região score
@@ -252,7 +255,6 @@ def clicar(): ## Gerencia o processo de clique no tabuleiro
                 seletion = selecionar()
                 jogadas[seletion] = (str(seletion)+'o')
             mudar_jogador()
-
 
 def machine_choice(vez_de_jogar): ## Define a jogada da maquina
     debug_funcion('machine_choice()' , tempo_debug)
@@ -375,17 +377,20 @@ def reaction_win(): ## Reação para fim de jogo
     global win_n_o
     global win_n_x
     global finalizado
+    global vez_de_jogar
     vencendor = veri_win(jogadas)
     if vencendor != 'null':
         if vencendor[0] == 'o':
             win_n_o = win_n_o +1 
             print ('O ganhou e esta com', win_n_o, 'pontos')
             selecionar_vitoria(vencendor[1])
+            vez_de_jogar = -1
   
         if vencendor[0] == 'x':
             win_n_x = win_n_x +1 
             print ('X ganhou e esta com', win_n_x, 'pontos')
             selecionar_vitoria(vencendor[1])
+            vez_de_jogar = 1
         finalizado = True
         new_partida()
 
@@ -402,32 +407,32 @@ while True :
     if modo_de_jogo == 2 :
         if vez_de_jogar == 1 :
             sair()
+            clicar()
+            selecionar()
+            clicar()
         if vez_de_jogar == -1 :
             sair()
+            machine_choice(vez_de_jogar)
     if modo_de_jogo == 3:
         if vez_de_jogar == 1 :
             sair()
             machine_choice(vez_de_jogar)
-            desenhar_score()
-            desenhar_aba_status()
         if vez_de_jogar == -1 :
             sair()
             machine_choice(vez_de_jogar)
-            desenhar_score()
-            desenhar_aba_status()
+
     if modo_de_jogo == 4:
+        clicar()
         sair()
-        desenhar_aba_status()
         clicar()
         selecionar()
         clicar()
-        reaction_win()
+    
     reaction_win()
     desenhar_aba_status()
     desenhar_tabu()
     desenhar_jogadas()
     output('null')
-
     pygame.display.update()
     pygame.display.flip()
     
