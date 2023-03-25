@@ -41,7 +41,7 @@ minuto = agora.minute
 segundo = agora.second
 '''
 historico_output = ['Hashtag NEXT', vesion ,'Developed by Gabriel J Santos','iniciado em ' + str(agora)]
-
+finalizado = False
 ######## Iniciar Tela Pygame ########
 pygame.init()
 tela = pygame.display.set_mode((tabu_size[0] + window_status_size[0], tabu_size[1] + window_status_size[1]), 0, 32)
@@ -99,13 +99,12 @@ def limpar_tabu(): ## limpar o tabuleiro
     debug_funcion('limpar_tabu()', tempo_debug)
     output('Tabuleiro limpo')
     global jogadas
-    global finalizado
     jogadas=[
     ' ' , ' ' , ' ',
     ' ' , ' ' , ' ',
     ' ' , ' ' , ' '
     ]
-    finalizado = False
+    
 
 
 def desenhar_x (posx,posy): ## Desenhar o X
@@ -227,7 +226,6 @@ def selecionar(): ## Marcar a seleção e retorna o bloco selecionado
                 return 'null'
 
 def selecionar_vitoria(positions=[]): ## Marcar as posições de vitória
-    debug_funcion('selecionar_vitoria(positions=[])', tempo_debug)
     positions= (int(positions[0][0]),int(positions[1][0]),int(positions[2][0]))
     selecion_x = 0
     for n in range (3) :
@@ -268,8 +266,6 @@ def machine_choice(vez_de_jogar): ## Define a jogada da maquina
         if vez_de_jogar == -1 :
             jogadas[choice] = (str(choice)+'o')
         mudar_jogador()
-        desenhar_tabu()
-        desenhar_jogadas()
 
 def sair(): ## Função que fecha o programa
     debug_funcion('sair()' , tempo_debug)
@@ -329,47 +325,39 @@ def jogada_random(): ## Define jogada aleatoria
     debug_funcion('jogada_random()' , tempo_debug)
     if ' ' in jogadas:
         random_value = random.randint(0,8)
-        print('Escolhendo aleatoriamente = ', random_value)
+        output('Escolhendo aleatoriamente = '+ str(random_value))
         if jogadas[random_value] != ' ' :
-            print ('Posição ocupada, corrigindo...')
+            output ('Posição ocupada, corrigindo...')
             while jogadas[random_value] != ' ':
                 random_value = random_value + 1
                 if random_value >= 9 :
                     random_value = 0
-            print('Valor corrigido = ', random_value)
+            output('Valor corrigido = '+ str(random_value))
         return random_value
 
 def jogada_inicial_estrategica(): ## Define jogas aleatrias estrategias iniciais
     debug_funcion('jogada_inicial_estrategica()' , tempo_debug)
     melhores_jogadas_iniciais=[0 , 2 , 4 , 6 , 8]
     random_value = melhores_jogadas_iniciais[random.randint(0,4)]
-    print('Escolhendo aleatoriamente uma melhor jogada inicial = ', random_value)
+    output('Escolhendo aleatoriamente uma melhor jogada inicial = '+ str(random_value))
     ocupado_completamente = 0
     if jogadas[random_value] != ' ' :
-        print ('Posição ocupada, corrigindo...')
+        output ('Posição ocupada, corrigindo...')
         while jogadas[random_value] != ' ' and ocupado_completamente < 6:
             random_value = random_value + 2
             ocupado_completamente = ocupado_completamente + 1
             if random_value >= 9 :
                 random_value = 0
         if ocupado_completamente < 6 :
-            print('Valor estrategico inicial corrigido = ', random_value)
+            output('Valor estrategico inicial corrigido = '+ str(random_value))
     if ocupado_completamente > 5 :
         random_value = - 1
-        print('Todas as posições estrategicas iniciais estão ocupadas')
+        output('Todas as posições estrategicas iniciais estão ocupadas')
     return random_value
 
-def new_partida(): ## Inicia uma nova partida
-    debug_funcion('new_partida()' , tempo_debug)
-    output('Nova partida iniciada')
-    desenhar_tabu()
-    clicar()
-    desenhar_jogadas()
-    desenhar_aba_status()
-    pygame.display.update()
-    pygame.display.flip()
-    sleep(2)  
-    limpar_tabu()
+
+
+
 
 def reaction_win(): ## Reação para fim de jogo
     debug_funcion('reaction_win()' , tempo_debug)
@@ -382,25 +370,24 @@ def reaction_win(): ## Reação para fim de jogo
     if vencendor != 'null':
         if vencendor[0] == 'o':
             win_n_o = win_n_o +1 
-            print ('O ganhou e esta com', win_n_o, 'pontos')
+            output('O ganhou e esta com '+ str(win_n_o)+ ' pontos')
             selecionar_vitoria(vencendor[1])
             vez_de_jogar = -1
   
         if vencendor[0] == 'x':
             win_n_x = win_n_x +1 
-            print ('X ganhou e esta com', win_n_x, 'pontos')
+            output('X ganhou e esta com '+ str(win_n_x)+ ' pontos')
             selecionar_vitoria(vencendor[1])
             vez_de_jogar = 1
         finalizado = True
-        new_partida()
 
     if vencendor[0] == '#':
-        print ('#')
-        new_partida()
+        output ('Empate')
+        finalizado = True
+        sleep(2)  
 
 ### Loop principal com todas as funções
 while True :
-    
     debug_funcion('while True' , tempo_debug)
     if modo_de_jogo == 1 :
         sair()
@@ -410,14 +397,17 @@ while True :
             clicar()
             selecionar()
             clicar()
-        if vez_de_jogar == -1 :
+            selecionar()
+            clicar()
+        elif vez_de_jogar == -1 :
             sair()
             machine_choice(vez_de_jogar)
     if modo_de_jogo == 3:
+        sleep(0.2)
         if vez_de_jogar == 1 :
             sair()
             machine_choice(vez_de_jogar)
-        if vez_de_jogar == -1 :
+        elif vez_de_jogar == -1 :
             sair()
             machine_choice(vez_de_jogar)
 
@@ -428,12 +418,26 @@ while True :
         selecionar()
         clicar()
     
-    reaction_win()
-    desenhar_aba_status()
-    desenhar_tabu()
-    desenhar_jogadas()
-    output('null')
-    pygame.display.update()
-    pygame.display.flip()
+    if finalizado == False:
+        tela.fill(bg_color)
+        output('null')
+        reaction_win()
+        desenhar_aba_status()
+        desenhar_jogadas()
+        desenhar_tabu()
+        pygame.display.update()
+        pygame.display.flip()
+
+    if finalizado == True:
+        pygame.display.update()
+        sleep(0.5)
+        limpar_tabu()
+        finalizado = False
+        tela.fill(bg_color)
+        output('Finalizado')
+        desenhar_aba_status()
+        desenhar_tabu()
+        pygame.display.update()
+        #pygame.display.flip()
     
     
