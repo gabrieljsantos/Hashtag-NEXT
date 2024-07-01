@@ -1,5 +1,6 @@
 # Hashtag-NEXT
-
+"análise de todas as combinações de jogadas até N movimentos para vitória 'o'".
+"análise heurística de combinações de jogadas"
 _"O código em questão é um jogo da velha feito em Python usando a biblioteca Pygame para a interface gráfica. O jogo é exibido em uma janela, onde o tabuleiro do jogo da velha é desenhado e o usuário pode jogar clicando nas células do tabuleiro. O jogo suporta dois jogadores e o placar é mantido em uma janela lateral que exibe o número de vitórias do jogador 'X' e do jogador 'O'._
 
 _O código possui diversas funções que desenham elementos na tela, como a função 'desenhar_tabu()', que desenha as linhas do tabuleiro, e as funções 'desenhar_x()' e 'desenhar_o()', que desenham o 'X' e o 'O' nas células do tabuleiro, respectivamente._
