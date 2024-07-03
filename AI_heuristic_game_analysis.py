@@ -1,6 +1,7 @@
 import csv
 from copy import deepcopy
 import matplotlib.pyplot as plt
+import random
 
 import matplotlib.pyplot as plt
 import matplotlib.pyplot as plt
@@ -30,7 +31,7 @@ def plot_analysis_results(analysis_results, occupied_positions):
         axs[pos].set_title(f'Posição {pos}')
         axs[pos].set_xlabel('Número de jogadas')
         axs[pos].set_ylabel('Possibilidades de Ganhar')
-        axs[pos].legend()
+        #axs[pos].legend("Tabela de possibilidades de ganhar em relação a posições")
 
     plt.tight_layout()
     plt.show()
@@ -50,6 +51,11 @@ def heuristic_game_analysis(current_game_state):
         else:
             busy.append((P , current_game_state[P][1]))
     
+    if len(busy) % 2 == 0:
+        proximonext_to_play = -1
+    else:
+        proximonext_to_play= 1
+    
     for N in range(num_moves_in_state+1, 10):
         # Nome do arquivo CSV
         csv_filename = 'AI_data/{}th_move_permutation_win.csv'.format(N)
@@ -66,7 +72,7 @@ def heuristic_game_analysis(current_game_state):
 
         # Carregar as jogadas de vitória do arquivo CSV
         winning_moves = load_winning_moves(csv_filename)
-        vez_de_jogar = -1
+        vez_de_jogar = proximonext_to_play
         for future_movement in possible_moves:
             # Criar uma cópia completa do estado atual do jogo e adicionar o movimento futuro
             possible_state_of_the_game = deepcopy(clean_current_state)
@@ -99,9 +105,34 @@ def heuristic_game_analysis(current_game_state):
 
     return analysis , busy
 
+def interpret_HG_analysis(data):
+    # Interpretar o resultado da heuristic_game_analysis()
+    integrais = []
+    good_choices = []
+    for key in data.keys():
+        soma = 0
+        position_data = data[key]
+        for coordinate in position_data:
+            soma += coordinate[1]
+        integrais.append((key,soma))
+    larger_integral = (0,0)
+    for position_data in integrais:
+        if (position_data[1] > larger_integral[1]): 
+            larger_integral = position_data
+    for position_data in integrais:
+        if position_data[1] == larger_integral[1]:
+            good_choices.append(position_data)
+    print(good_choices)
+    choice = random.choice([item[0] for item in good_choices])
+    print(choice)
+    return choice
+
 # Teste de exemplo com um estado atual representado como uma lista de strings
-teste = ['0o', ' ', '2o', '3x', '4o', ' ', ' ', '7x', '8x']
+"""
+teste = [' ', ' ', '2o', '3x', '4o', ' ', ' ', ' ', ' ']
 print(teste)
 resultado, busy = heuristic_game_analysis(teste)
 print(resultado , busy)
 plot_analysis_results(resultado , busy)
+interpret_HG_analysis(resultado)
+"""
