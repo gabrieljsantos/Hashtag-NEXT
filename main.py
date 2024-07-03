@@ -11,6 +11,7 @@ from PySimpleGUI.PySimpleGUI import VerticalSeparator
 from time import sleep
 from load_config_ini import *
 from load_themes_ini import *
+from AI_heuristic_game_analysis import*
 #from tkinter import*
 
 import random
@@ -254,13 +255,18 @@ def clicar(): ## Gerencia o processo de clique no tabuleiro
                 jogadas[seletion] = (str(seletion)+'o')
             mudar_jogador()
 
-def machine_choice(vez_de_jogar): ## Define a jogada da maquina
+def machine_choice(vez_de_jogar,type): ## Define a jogada da maquina
     debug_funcion('machine_choice()' , tempo_debug)
     global finalizado 
     if finalizado == False:
-        choice = jogada_random()
-        if jogada_inicial_estrategica() != -1:
-            choice = jogada_inicial_estrategica()
+        if type == "hga":
+            dados, busy = heuristic_game_analysis(jogadas)
+            print(dados)
+            choice = interpret_HG_analysis(dados)
+        if type == "jie":
+            choice = jogada_random()
+            if jogada_inicial_estrategica() != -1:
+                choice = jogada_inicial_estrategica()
         if vez_de_jogar == 1 :
             jogadas[choice] = (str(choice)+'x')
         if vez_de_jogar == -1 :
@@ -390,7 +396,16 @@ def reaction_win(): ## Reação para fim de jogo
 while True :
     debug_funcion('while True' , tempo_debug)
     if modo_de_jogo == 1 :
-        sair()
+        if vez_de_jogar == 1 :
+            sair()
+            clicar()
+            selecionar()
+            clicar()
+            selecionar()
+            clicar()
+        elif vez_de_jogar == -1 :
+            sair()
+            machine_choice(vez_de_jogar,"hga")
     if modo_de_jogo == 2 :
         if vez_de_jogar == 1 :
             sair()
@@ -401,15 +416,15 @@ while True :
             clicar()
         elif vez_de_jogar == -1 :
             sair()
-            machine_choice(vez_de_jogar)
+            machine_choice(vez_de_jogar,"jie")
     if modo_de_jogo == 3:
         sleep(0.2)
         if vez_de_jogar == 1 :
             sair()
-            machine_choice(vez_de_jogar)
+            machine_choice(vez_de_jogar,"jie")
         elif vez_de_jogar == -1 :
             sair()
-            machine_choice(vez_de_jogar)
+            machine_choice(vez_de_jogar,"jie")
 
     if modo_de_jogo == 4:
         clicar()
