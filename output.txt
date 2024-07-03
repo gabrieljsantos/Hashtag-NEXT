@@ -60086,3 +60086,153 @@ Escolhendo aleatoriamente uma melhor jogada inicial = 6
 Posição ocupada, corrigindo...
 Valor estrategico inicial corrigido = 8
 Escolhendo aleatoriamente uma melhor jogada inicial = 0
+
+
+****************************************************
+v1.0.1
+excutado em 2024-07-02 21:59:49.879316
+Escolhendo aleatoriamente = 2
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Escolhendo aleatoriamente = 3
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 2
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Escolhendo aleatoriamente = 5
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Escolhendo aleatoriamente = 0
+Posição ocupada, corrigindo...
+Valor corrigido = 1
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 4
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 4
+Escolhendo aleatoriamente = 4
+Posição ocupada, corrigindo...
+Valor corrigido = 5
+Escolhendo aleatoriamente uma melhor jogada inicial = 6
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 6
+Escolhendo aleatoriamente = 6
+Posição ocupada, corrigindo...
+Valor corrigido = 7
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Posição ocupada, corrigindo...
+Todas as posições estrategicas iniciais estão ocupadas
+Escolhendo aleatoriamente = 6
+Posição ocupada, corrigindo...
+Valor corrigido = 1
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Posição ocupada, corrigindo...
+Todas as posições estrategicas iniciais estão ocupadas
+O ganhou e esta com 1 pontos
+Tabuleiro limpo
+Finalizado
+Escolhendo aleatoriamente = 2
+Escolhendo aleatoriamente uma melhor jogada inicial = 4
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Escolhendo aleatoriamente = 4
+Escolhendo aleatoriamente uma melhor jogada inicial = 4
+Escolhendo aleatoriamente uma melhor jogada inicial = 4
+Escolhendo aleatoriamente = 2
+Posição ocupada, corrigindo...
+Valor corrigido = 3
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Escolhendo aleatoriamente uma melhor jogada inicial = 4
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 6
+Escolhendo aleatoriamente = 8
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 8
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Escolhendo aleatoriamente = 0
+Posição ocupada, corrigindo...
+Valor corrigido = 1
+Escolhendo aleatoriamente uma melhor jogada inicial = 6
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 8
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Escolhendo aleatoriamente = 8
+Posição ocupada, corrigindo...
+Valor corrigido = 1
+Escolhendo aleatoriamente uma melhor jogada inicial = 6
+Posição ocupada, corrigindo...
+Todas as posições estrategicas iniciais estão ocupadas
+
+
+****************************************************
+v1.0.1
+excutado em 2024-07-02 22:01:21.725689
+Escolhendo aleatoriamente = 5
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Escolhendo aleatoriamente = 4
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Escolhendo aleatoriamente = 1
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Escolhendo aleatoriamente uma melhor jogada inicial = 6
+Escolhendo aleatoriamente = 1
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 4
+Escolhendo aleatoriamente uma melhor jogada inicial = 4
+O ganhou e esta com 1 pontos
+O ganhou e esta com 2 pontos
+O ganhou e esta com 3 pontos
+O ganhou e esta com 4 pontos
+O ganhou e esta com 5 pontos
+O ganhou e esta com 6 pontos
+
+
+****************************************************
+v1.0.1
+excutado em 2024-07-02 22:02:08.413044
+Escolhendo aleatoriamente = 0
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Escolhendo aleatoriamente = 2
+Escolhendo aleatoriamente uma melhor jogada inicial = 6
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Escolhendo aleatoriamente = 4
+Escolhendo aleatoriamente uma melhor jogada inicial = 4
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 0
+Escolhendo aleatoriamente = 0
+Posição ocupada, corrigindo...
+Valor corrigido = 1
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 4
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 4
+O ganhou e esta com 1 pontos
+O ganhou e esta com 2 pontos
+O ganhou e esta com 3 pontos
+O ganhou e esta com 4 pontos
+O ganhou e esta com 5 pontos
+O ganhou e esta com 6 pontos
+O ganhou e esta com 7 pontos
+O ganhou e esta com 8 pontos
+O ganhou e esta com 9 pontos
+O ganhou e esta com 10 pontos
+O ganhou e esta com 11 pontos
+O ganhou e esta com 12 pontos
+O ganhou e esta com 13 pontos
+O ganhou e esta com 14 pontos
+O ganhou e esta com 15 pontos
+O ganhou e esta com 16 pontos
+O ganhou e esta com 17 pontos
+O ganhou e esta com 18 pontos
+O ganhou e esta com 19 pontos
+O ganhou e esta com 20 pontos
+O ganhou e esta com 21 pontos
+O ganhou e esta com 22 pontos
