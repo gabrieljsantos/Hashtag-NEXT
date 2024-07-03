@@ -1,10 +1,4 @@
-import csv
-from copy import deepcopy
-import matplotlib.pyplot as plt
-import random
-
-import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt
+from All_LIBS import *
 
 def plot_analysis_results(analysis_results, occupied_positions):
     num_positions = 9  # O número de posições possíveis no jogo da velha
@@ -136,3 +130,9 @@ print(resultado , busy)
 plot_analysis_results(resultado , busy)
 interpret_HG_analysis(resultado)
 """
+
+def choice_HGA(current_game_state):
+    if ' ' in current_game_state:
+        data, busy = heuristic_game_analysis(current_game_state)
+        return interpret_HG_analysis(data)
+    return 'null'

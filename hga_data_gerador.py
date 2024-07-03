@@ -1,14 +1,7 @@
-import csv
-from Functions import *
-from itertools import combinations
-from itertools import permutations
-
-# Nome do arquivo CSV
+from main import *
+from All_LIBS import *
 
 
-# Gerando todas as combinações de 0 a 8 sem repetir
-# combs = list(combinations(range(9), 2))  # Mudar o segundo valor do 2 para 3 para obter combinações de três
-N = 5
 for N in range(10) :
     permsNthMoveNumeric = list(permutations(range(9), N))
     permsNthMove = []

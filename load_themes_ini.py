@@ -1,4 +1,5 @@
-import configparser
+from All_LIBS import *
+
 
 themes = configparser.ConfigParser()
 themes.read('themes.ini')

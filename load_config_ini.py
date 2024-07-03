@@ -1,4 +1,5 @@
-import configparser
+from All_LIBS import *
+
 config = configparser.ConfigParser()
 config.read('config.ini')
 
