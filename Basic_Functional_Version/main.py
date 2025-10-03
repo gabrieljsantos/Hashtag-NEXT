@@ -1,5 +1,3 @@
-vesion = 'v1.0.0'
-
 # -*- coding: utf-8 -*-
 ######## Impotação de bibliotecas ########
 from functools import partial
@@ -8,38 +6,17 @@ from base64 import b16encode
 from pygame.locals import * # MOUSEBUTTONDOWN, Rect, QUIT
 from sys import exit
 from time import sleep
-from load_config_ini import *
-from load_themes_ini import *
+from read_config_ini import *
 #from tkinter import*
-
 import random
+
 import os
 import pygame
 import re
 import win32api
 import win32con
 import win32gui
-import datetime
 
-# Obtenha a data e hora atuais
-agora = datetime.datetime.now()
-with open('output.txt','a',newline='') as arquivo:
-    arquivo.write('\n')
-    arquivo.write('\n')
-    arquivo.write('****************************************************' + '\n')
-    arquivo.write(str(vesion) + '\n')
-    arquivo.write('excutado em '+ str(agora) + "\n")
-
-'''
-# Acesse os atributos da data e hora para obter as informações desejadas
-ano = agora.year
-mes = agora.month
-dia = agora.day
-hora = agora.hour
-minuto = agora.minute
-segundo = agora.second
-'''
-historico_output = ['Hashtag NEXT', vesion ,'Developed by Gabriel J Santos','iniciado em ' + str(agora)]
 
 ######## Iniciar Tela Pygame ########
 pygame.init()
@@ -55,27 +32,6 @@ tela.fill(bg_color)
 pygame.font.init() 
 
 ######## Funções ########
-def output(texto):
-    global historico_output
-    if texto != 'null':
-        historico_output.append(texto)
-        with open('output.txt','a',newline='') as arquivo:
-            arquivo.write(str(texto) + "\n")
-    if len(historico_output) >= 10:
-        # usa slicing para obter os últimos 4 elementos da lista
-        recente_output = historico_output[-10:]
-    else:
-        # se a lista tiver menos de 4 elementos, usa a lista inteira
-         recente_output = historico_output
-    folder_fonts = os.path.abspath("fonts")
-    fonte= os.path.join(folder_fonts, "consolas.ttf")
-    fontesys=pygame.font.SysFont(fonte, 18)
-    posy_output = 440
-    for string in recente_output:
-        output = fontesys.render(string , 1, (150, 150, 150))
-        tela.blit(output,(610,posy_output))
-        posy_output += 15  # incrementa a posição vertical para a próxima string  
-
 def debug_funcion(texto,time):
     global debug
     if debug == True:
@@ -96,7 +52,6 @@ def desenhar_tabu(): ## Desenhar linhas do tabuleiro
 
 def limpar_tabu(): ## limpar o tabuleiro
     debug_funcion('limpar_tabu()', tempo_debug)
-    output('Tabuleiro limpo')
     global jogadas
     jogadas=[
     ' ' , ' ' , ' ',
@@ -115,94 +70,41 @@ def desenhar_o (posx,posy): ## Desenhar o circulo/bola
     debug_funcion(('desenhar_o ', str(posx), str(posy)), tempo_debug)
     pygame.draw.circle(tela, circle_color, (posx,posy), 79, width=24)
 
-def desenhar_score(): ## Desenhar a janela de Score
-    debug_funcion('desenhar_score()', tempo_debug)
+def desenhar_aba_score(): ## Desenhar a janela de Score
+    debug_funcion('desenhar_aba_score()', tempo_debug)
     global win_n_o
     global win_n_x
+    txt_score_title= ('*********** SCORE ***********')
+    txt_score_valores=(str(win_n_x)+ ' - ' +  str(win_n_o))
+    pygame.font.init()
+    fonte=pygame.font.get_default_font()
+    fontesys=pygame.font.SysFont(fonte, 40)
+    score_title = fontesys.render(txt_score_title , 1, (score_title_color)) 
+    tela.blit(score_title,(625,120))
 
     fonte=pygame.font.get_default_font()
-    ## definindo tamanho da fonte em função do valor de win_n_
-    if win_n_o >= 1000:
-        size_fonte = 55
-    elif win_n_o >= 100:
-        size_fonte = 75
-    elif win_n_o >= 10:
-        size_fonte = 100
-    else:
-        size_fonte = 150
-
-    fontesys=pygame.font.SysFont(fonte, size_fonte)
-    score_o = fontesys.render(str(win_n_o) , 1, (score_value_color)) 
-    largura_texto, altura_texto = score_o.get_size() # Obtenha as dimensões do texto
-    rect_texto = score_o.get_rect(centerx=650, centery=250)# Crie um objeto Rect para centralizar o texto na posição
-    tela.blit(score_o,rect_texto)
-
-    ## definindo tamanho da fonte em função do valor de win_n_
-    if win_n_x >= 1000:
-        size_fonte = 55
-    elif win_n_x >= 100:
-        size_fonte = 75
-    elif win_n_x >= 10:
-        size_fonte = 100
-    else:
-        size_fonte = 150
-    
-    fontesys=pygame.font.SysFont(fonte, size_fonte)
-    score_x = fontesys.render(str(win_n_x) , 1, (score_value_color)) 
-    largura_texto, altura_texto = score_x.get_size() # Obtenha as dimensões do texto
-    rect_texto = score_x.get_rect(centerx=950, centery=250)# Crie um objeto Rect para centralizar o texto na posição
-    tela.blit(score_x,rect_texto)
+    fontesys=pygame.font.SysFont(fonte, 160)
+    score_valores = fontesys.render(txt_score_valores , 1, (score_value_color)) 
+    tela.blit(score_valores,(700,200))
 
 def desenhar_aba_status(): ## Desenha a Aba de Status lateral
-    global vez_de_jogar
     debug_funcion('desenhar_aba_status()', tempo_debug)
-    LOGO_FILE = os.path.abspath(r'Imagens\LOGO3.png')
-    LOGO = pygame.image.load(LOGO_FILE).convert_alpha()
+    LOGO_FILE = os.path.abspath(r'Imagens\LOGO.png')
+    LOGO = pygame.image.load(LOGO_FILE)
     tela.blit(LOGO,(600,0))
-    
-    pygame.font.init() 
+    desenhar_aba_score()
 
     txt_Developed_by= ('Developed by')
     txt_Gabriel_J_Santos= ('Gabriel J Santos')
-    
+    pygame.font.init()
     fonte=pygame.font.get_default_font()
-    fontesys=pygame.font.SysFont(fonte, 26)
+    fontesys=pygame.font.SysFont(fonte, 20)
     Developed_by = fontesys.render(txt_Developed_by , 1, (0, 0, 0)) 
     Gabriel_J_Santos = fontesys.render(txt_Gabriel_J_Santos , 1, (255, 0, 0)) 
-    posx = 612
-    posy = 106
+    posx = 780
+    posy = 580
     tela.blit(Developed_by,(posx,posy))
-    tela.blit(Gabriel_J_Santos,(posx+117,posy))
-
-    fonte=pygame.font.get_default_font()
-    txt_score_title= ('v1.0.0') ## terxo titulo da região score
-    fontesys=pygame.font.SysFont(fonte, 50)
-    score_title = fontesys.render(txt_score_title , 1, (score_title_color)) 
-    largura_texto, altura_texto = score_title.get_size()
-    rect_texto = score_title.get_rect(centerx=936, centery=120)
-    tela.blit(score_title, rect_texto)
-
-    fonte=pygame.font.get_default_font()
-    txt_score_title= ('*********** SCORE ***********') ## terxo titulo da região score
-    fontesys=pygame.font.SysFont(fonte, 40)
-    score_title = fontesys.render(txt_score_title , 1, (score_title_color)) 
-    largura_texto, altura_texto = score_title.get_size()
-    rect_texto = score_title.get_rect(centerx=800, centery=175)
-    tela.blit(score_title, rect_texto)
-    
-    ### seleciona na aba de status de quem será a jogada
-    if vez_de_jogar == 1: 
-        lugar_selecionado = pygame.draw.rect(tela, retangulo_sele_color, (800, 200, 100, 100))
-    if vez_de_jogar == -1:
-        lugar_selecionado = pygame.draw.rect(tela, retangulo_sele_color, (700, 200, 100, 100))
-        
-    ## desenhar circulo da aba de status
-    pygame.draw.circle(tela, circle_color, (750,250), 34, width=12)
-    ## desenhar o x da aba de status
-    pygame.draw.polygon(tela, x_color, ((810,281), (819,290) , (890,219) , (881,210)))
-    pygame.draw.polygon(tela, x_color, ((819,210), (810,219) , (881,290) , (890,281)))
-
-    desenhar_score() 
+    tela.blit(Gabriel_J_Santos,(posx+95,posy))
 
 def selecionar(): ## Marcar a seleção e retorna o bloco selecionado
     
@@ -212,8 +114,6 @@ def selecionar(): ## Marcar a seleção e retorna o bloco selecionado
     selecion_x=posision[0]//line_spacing_x
     selecion_y=posision[1]//line_spacing_y
     tela.fill(bg_color)
-    if selecion_x > 2:
-        return 'null'
     if (pygame.mouse.get_focused() == True) :
         if (posision[0] <= tabu_size[0]):
             if jogadas[int(selecion_x+ selecion_y*3)] == ' ':
@@ -230,7 +130,7 @@ def selecionar_vitoria(positions=[]): ## Marcar as posições de vitória
         selecion_y = int(positions[n]/3)
         selecion_x = (positions[n])%3
         lugar_selecionado = pygame.draw.rect(tela, retangulo_sele_vitoria, (selecion_x * line_spacing_x, selecion_y  * line_spacing_y, line_spacing_x, line_spacing_y))
-
+    
 def mudar_jogador(): ## Inverter jogador.
     debug_funcion('mudar_jogador()', tempo_debug)
     global vez_de_jogar
@@ -251,7 +151,8 @@ def clicar(): ## Gerencia o processo de clique no tabuleiro
                 seletion = selecionar()
                 jogadas[seletion] = (str(seletion)+'o')
             mudar_jogador()
-
+            desenhar_tabu()
+            desenhar_jogadas()
 
 def machine_choice(vez_de_jogar): ## Define a jogada da maquina
     debug_funcion('machine_choice()' , tempo_debug)
@@ -267,6 +168,9 @@ def machine_choice(vez_de_jogar): ## Define a jogada da maquina
         mudar_jogador()
         desenhar_tabu()
         desenhar_jogadas()
+        pygame.display.update()
+        pygame.display.flip()
+        sleep(0.3)
 
 def sair(): ## Função que fecha o programa
     debug_funcion('sair()' , tempo_debug)
@@ -303,24 +207,21 @@ def veri_win(elementos=[]): ## Verificador de ganhador
     global o_win
     
     ### Função que testa se existe alguma combinação de vitoria dentro das jogadas
-    run_True = True
     for n in range (8) :
-        ### Função que verifica se alguém ganhou
+        run_True = True
+        ### Função que verifica se alguem ganhou
+        if ' ' not in  elementos:
+            run_True = False
+            return ('#' , '#')
         if set(x_win[n])  <= set(elementos):
             run_True = False
             return ('x' , x_win[n])
         if set(o_win[n])  <= set(elementos):
             run_True = False
             return ('o' , o_win[n])
-        # Verifica se todas as jogadas foram feitas
-
-    if (run_True) & (' ' in elementos):
-        # Se todas as jogadas foram feitas e não houve vencedor, retorna empate        
-        run_True = True
-    else:
-        return ('#', '#')
-    # Se o loop terminar sem retornar, não houve vencedor nem empate
-    return 'null'
+        
+        if run_True == True and n == 7:
+            return 'null'
             
 def jogada_random(): ## Define jogada aleatoria
     debug_funcion('jogada_random()' , tempo_debug)
@@ -358,14 +259,12 @@ def jogada_inicial_estrategica(): ## Define jogas aleatrias estrategias iniciais
 
 def new_partida(): ## Inicia uma nova partida
     debug_funcion('new_partida()' , tempo_debug)
-    output('Nova partida iniciada')
     desenhar_tabu()
     clicar()
     desenhar_jogadas()
-    desenhar_aba_status()
     pygame.display.update()
-    pygame.display.flip()
-    sleep(2)  
+    pygame.display.flip()   
+    sleep(2)
     limpar_tabu()
 
 def reaction_win(): ## Reação para fim de jogo
@@ -375,6 +274,7 @@ def reaction_win(): ## Reação para fim de jogo
     global win_n_x
     global finalizado
     vencendor = veri_win(jogadas)
+    print(veri_win(jogadas))
     if vencendor != 'null':
         if vencendor[0] == 'o':
             win_n_o = win_n_o +1 
@@ -394,7 +294,6 @@ def reaction_win(): ## Reação para fim de jogo
 
 ### Loop principal com todas as funções
 while True :
-    
     debug_funcion('while True' , tempo_debug)
     if modo_de_jogo == 1 :
         sair()
@@ -407,25 +306,26 @@ while True :
         if vez_de_jogar == 1 :
             sair()
             machine_choice(vez_de_jogar)
-            desenhar_score()
+            desenhar_aba_score()
             desenhar_aba_status()
         if vez_de_jogar == -1 :
             sair()
             machine_choice(vez_de_jogar)
-            desenhar_score()
+            desenhar_aba_score()
             desenhar_aba_status()
     if modo_de_jogo == 4:
         sair()
+        desenhar_aba_score()
         desenhar_aba_status()
         clicar()
         selecionar()
         clicar()
         reaction_win()
     reaction_win()
-    desenhar_aba_status()
     desenhar_tabu()
     desenhar_jogadas()
-    output('null')
+    desenhar_aba_score()
+    desenhar_aba_status()
 
     pygame.display.update()
     pygame.display.flip()
