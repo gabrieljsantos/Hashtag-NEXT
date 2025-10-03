@@ -1,72 +1,223 @@
 
 
-****************************************************
-v1.0.0
-excutado em 2023-02-22 16:05:56.513302
-
 
 ****************************************************
-v1.0.0
-excutado em 2023-02-22 16:07:26.266016
-
-
-****************************************************
-v1.0.0
-excutado em 2023-02-22 16:09:37.385384
-Nova partida iniciada
-tabuleiro limpo
-Nova partida iniciada
-tabuleiro limpo
-Nova partida iniciada
-tabuleiro limpo
-
-
-****************************************************
-v1.0.0
-excutado em 2023-02-22 16:17:03.529910
-Nova partida iniciada
-tabuleiro limpo
-Nova partida iniciada
-tabuleiro limpo
-
-
-****************************************************
-v1.0.0
-excutado em 2023-02-22 16:22:07.970491
-
-
-****************************************************
-v1.0.0
-excutado em 2023-02-22 16:23:52.194765
-Nova partida iniciada
+v1.0.1
+excutado em 2024-07-02 22:15:38.184599
+Escolhendo aleatoriamente = 7
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Escolhendo aleatoriamente = 4
+Escolhendo aleatoriamente uma melhor jogada inicial = 6
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Escolhendo aleatoriamente = 8
+Posição ocupada, corrigindo...
+Valor corrigido = 0
+Escolhendo aleatoriamente uma melhor jogada inicial = 4
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Escolhendo aleatoriamente = 7
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 4
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 4
+Escolhendo aleatoriamente = 5
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 6
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 6
+Escolhendo aleatoriamente = 4
+Posição ocupada, corrigindo...
+Valor corrigido = 5
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Posição ocupada, corrigindo...
+Todas as posições estrategicas iniciais estão ocupadas
+Escolhendo aleatoriamente = 6
+Posição ocupada, corrigindo...
+Valor corrigido = 7
+Escolhendo aleatoriamente uma melhor jogada inicial = 6
+Posição ocupada, corrigindo...
+Todas as posições estrategicas iniciais estão ocupadas
+Escolhendo aleatoriamente = 8
+Posição ocupada, corrigindo...
+Valor corrigido = 1
+Escolhendo aleatoriamente uma melhor jogada inicial = 6
+Posição ocupada, corrigindo...
+Todas as posições estrategicas iniciais estão ocupadas
+Escolhendo aleatoriamente = 6
+Posição ocupada, corrigindo...
+Valor corrigido = 3
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Posição ocupada, corrigindo...
+Todas as posições estrategicas iniciais estão ocupadas
+O ganhou e esta com 1 pontos
 Tabuleiro limpo
-Nova partida iniciada
+Finalizado
+Escolhendo aleatoriamente = 3
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Escolhendo aleatoriamente = 3
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Escolhendo aleatoriamente uma melhor jogada inicial = 4
+Escolhendo aleatoriamente = 6
+Escolhendo aleatoriamente uma melhor jogada inicial = 4
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 6
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Escolhendo aleatoriamente = 3
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 6
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Escolhendo aleatoriamente = 7
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 6
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 6
+Escolhendo aleatoriamente = 0
+Posição ocupada, corrigindo...
+Valor corrigido = 1
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Posição ocupada, corrigindo...
+Todas as posições estrategicas iniciais estão ocupadas
+Escolhendo aleatoriamente = 4
+Posição ocupada, corrigindo...
+Valor corrigido = 5
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Posição ocupada, corrigindo...
+Todas as posições estrategicas iniciais estão ocupadas
+Escolhendo aleatoriamente = 5
+Posição ocupada, corrigindo...
+Valor corrigido = 7
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Posição ocupada, corrigindo...
+Todas as posições estrategicas iniciais estão ocupadas
+X ganhou e esta com 1 pontos
 Tabuleiro limpo
-Nova partida iniciada
-Tabuleiro limpo
-Nova partida iniciada
-Tabuleiro limpo
+Finalizado
+Escolhendo aleatoriamente = 2
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
 
 
 ****************************************************
-v1.0.0
-excutado em 2023-02-22 16:30:13.429219
-
-
-****************************************************
-v1.0.0
-excutado em 2023-02-22 16:30:38.167071
-Nova partida iniciada
+v1.0.1
+excutado em 2024-07-02 22:20:27.030286
+Escolhendo aleatoriamente = 1
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Escolhendo aleatoriamente = 0
+Posição ocupada, corrigindo...
+Valor corrigido = 1
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Escolhendo aleatoriamente uma melhor jogada inicial = 4
+Escolhendo aleatoriamente = 4
+Posição ocupada, corrigindo...
+Valor corrigido = 5
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 2
+Escolhendo aleatoriamente = 4
+Posição ocupada, corrigindo...
+Valor corrigido = 5
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 6
+Escolhendo aleatoriamente uma melhor jogada inicial = 4
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 6
+Escolhendo aleatoriamente = 3
+Escolhendo aleatoriamente uma melhor jogada inicial = 4
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 8
+Escolhendo aleatoriamente uma melhor jogada inicial = 6
+Posição ocupada, corrigindo...
+Valor estrategico inicial corrigido = 8
+Escolhendo aleatoriamente = 2
+Posição ocupada, corrigindo...
+Valor corrigido = 3
+Escolhendo aleatoriamente uma melhor jogada inicial = 4
+Posição ocupada, corrigindo...
+Todas as posições estrategicas iniciais estão ocupadas
+Escolhendo aleatoriamente = 2
+Posição ocupada, corrigindo...
+Valor corrigido = 5
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Posição ocupada, corrigindo...
+Todas as posições estrategicas iniciais estão ocupadas
+O ganhou e esta com 1 pontos
 Tabuleiro limpo
+Finalizado
+Escolhendo aleatoriamente = 8
+Escolhendo aleatoriamente uma melhor jogada inicial = 6
+Escolhendo aleatoriamente uma melhor jogada inicial = 2
+Escolhendo aleatoriamente = 8
+Escolhendo aleatoriamente uma melhor jogada inicial = 0
+Escolhendo aleatoriamente uma melhor jogada inicial = 8
+Escolhendo aleatoriamente = 0
+Escolhendo aleatoriamente uma melhor jogada inicial = 4
+Escolhendo aleatoriamente uma melhor jogada inicial = 4
 
 
 ****************************************************
-v1.0.0
-excutado em 2025-10-02 20:52:37.277892
-Nova partida iniciada
+v1.0.1
+excutado em 2024-07-02 22:20:39.361933
+
+
+****************************************************
+v1.0.1
+excutado em 2024-07-02 22:20:55.488825
+
+
+****************************************************
+v1.0.1
+excutado em 2024-07-02 22:21:55.911898
+
+
+****************************************************
+v1.0.1
+excutado em 2024-07-02 22:22:52.971523
+
+
+****************************************************
+v1.0.1
+excutado em 2025-10-02 21:20:17.779926
+X ganhou e esta com 1 pontos
 Tabuleiro limpo
+Finalizado
 
 
 ****************************************************
-v1.0.0
-excutado em 2025-10-02 20:53:28.280735
+v1.0.1
+excutado em 2025-10-02 21:22:31.743835
+
+
+****************************************************
+v1.0.1
+excutado em 2025-10-02 21:24:11.250687
+
+
+****************************************************
+v1.0.1
+excutado em 2025-10-02 21:32:56.982441
+
+
+****************************************************
+v1.0.1
+excutado em 2025-10-02 21:37:17.488249
+
+
+****************************************************
+v1.0.1
+excutado em 2025-10-02 21:38:19.396629
+
+
+****************************************************
+v1.0.1
+excutado em 2025-10-02 21:40:35.564387
